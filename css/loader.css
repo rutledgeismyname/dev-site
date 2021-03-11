@@ -20,7 +20,7 @@
       }
 .loader span{
   position:absolute;
-  top: 47%;
+  top: 46%;
   left: 50%;
   color: #ccc !important;
   font-size: 22px !important;
@@ -33,9 +33,9 @@
   width: 45px;
   border-radius: 6px;
   animation:hinge; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1.9s; /* don't forget to set a duration! */
-  animation-delay: 1.2s; /* don't forget to set a duration! */
-  top: 46%;
+  animation-duration: 1.8s; /* don't forget to set a duration! */
+  animation-delay: 1.4s; /* don't forget to set a duration! */
+  top: 45%;
   left: 50%;
   margin-top: -60px;
   margin-left: -20px;
