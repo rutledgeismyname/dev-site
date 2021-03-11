@@ -32,7 +32,7 @@
   position: relative;
   width: 40px;
   border-radius: 6px;
-  animation: bounceOutUp; /* referring directly to the animation's @keyframe declaration */
+  animation:rotateOut; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2.2s; /* don't forget to set a duration! */
   animation-delay: 2.2s; /* don't forget to set a duration! */
   top: 50%;
