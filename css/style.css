@@ -277,7 +277,7 @@ th {
 .apple-logo {
   width: 15px;
   content: var(--logo);
-  display: none;
+;
 }
 
 .navbar {
