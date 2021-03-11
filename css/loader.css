@@ -33,7 +33,7 @@
   width: 45px;
   border-radius: 6px;
   animation:hinge; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1.5s; /* don't forget to set a duration! */
+  animation-duration: 1.8s; /* don't forget to set a duration! */
   animation-delay: 1.3s; /* don't forget to set a duration! */
   top: 47%;
   left: 50%;
