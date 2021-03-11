@@ -56,7 +56,9 @@
     onmousemove="sleepOff();"
     ontouchmove="sleepOff();"
   >
-  <div class="loader animate__animated animate__repeat-1"></div>
+  <div class="loader">
+    <img src="/images/apple-c-icon-retro.png">
+    <span id="time"></span></div>
     <div class="form-container" id="form">
 
       <form class="form-signin">
@@ -71,7 +73,7 @@
           />
         </center>
         <h4 class="h4 mb-3 font-weight-normal text-center">
-          <span id="time"></span> and welcome! My name is
+          My name is
           <span style="font-weight: bold">Chris Rutledge</span>
         </h4>
         <h6 class="h6 mb-3 font-weight-normal text-center">
@@ -762,12 +764,12 @@
         var now = new Date();
         var hour = now.getHours();
         if (hour <= 11) {
-          document.getElementById("time").innerHTML = `Good morning, `;
+          document.getElementById("time").innerHTML = `Good morning `;
         } else if (hour >= 12 <= 17) {
-          document.getElementById("time").innerHTML = `Good afternoon, `;
+          document.getElementById("time").innerHTML = `Good afternoon `;
         }
         if (hour >= 18) {
-          document.getElementById("time").innerHTML = `Good evening, `;
+          document.getElementById("time").innerHTML = `Good evening `;
         }
       }
     </script>
