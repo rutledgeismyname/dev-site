@@ -20,14 +20,12 @@
       }
 .loader span{
   position:absolute;
-  top: 50%;
+  top: 49%;
   left: 50%;
   color: #ccc !important;
   font-size: 22px !important;
   transform: translate(-50%, 50%);
-  animation: fadeOut; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1.5s; /* don't forget to set a duration! */
-  animation-delay: 2.7s; /* don't forget to set a duration! */
+
 }
 .loader img{
   position: relative;
@@ -35,10 +33,10 @@
   border-radius: 6px;
   color: #ccc !important;
   font-size: 20px !important;
-  animation: fadeOut; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1.5s; /* don't forget to set a duration! */
-  animation-delay: 2.7s; /* don't forget to set a duration! */
-  top: 49%;
+  animation: flash; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3.5s; /* don't forget to set a duration! */
+  animation-delay: 0s; /* don't forget to set a duration! */
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
