@@ -1,4 +1,4 @@
-/*"use strict";*/
+"use strict";
 
 //////////////
 /////// Easter Egg ////////////
@@ -19,7 +19,7 @@ var topRightDateString = topRightDate.toDateString();
 document.getElementById("date").innerHTML = `${topRightDateString}`;
 
 //////////////
-/////// Copy URL so user can share ////////////
+/////// Copy URL so users can share ////////////
 /////////////
 const $temp = $("<input>");
 const $url = $(location).attr("href");
@@ -44,7 +44,7 @@ function clipAlert() {
 /////// Username login ////////////
 /////////////
 
-const randomNumber = Math.trunc(Math.random() * 999) + 1;
+const randomUsername = Math.trunc(Math.random() * 999) + 1;
 const nameInput = document.getElementById("name");
 
 document
@@ -59,19 +59,19 @@ document
     } else {
       document.getElementById(
         "username"
-      ).innerHTML = `Welcome, user${randomNumber}`;
+      ).innerHTML = `Welcome, user${randomUsername}`;
     }
   });
 
 function hideLogin() {
   $(".form-container").css("display", "none");
-  $(".folder-container").css("display", "block");
+  $(".folder-container-1").css("display", "block");
   $(".navbar").css("visibility", "visible");
 }
 
 function showLogin() {
   $(".form-container").css("display", "block");
-  $(".folder-container").css("display", "none");
+  $(".folder-container-1").css("display", "none");
   $(".navbar").css("visibility", "hidden");
 }
 
@@ -147,19 +147,8 @@ $(".readme-file").on("click", function () {
   }
 });
 
-//////////////
-/////// Mode Switch ////////////
-/////////////
-/*
-const modeSwitch = document.querySelector(".retro");
-
-modeSwitch.addEventListener("click", function () {
-  document.body.classList.toggle("retro").css("transition", ".3s");
-});*/
-
 $(".organizeFolder").click(function () {
   // Reset position
-
   $(".resize-drag").removeAttr("style").css("transition", ".5s");
   setTimeout(function () {
     $(".resize-drag").removeAttr("style");
@@ -175,7 +164,6 @@ batteryPromise.then(batteryCallback);
 function batteryCallback(batteryObject) {
   printBatteryStatus(batteryObject);
 }
-
 function printBatteryStatus(batteryObject) {
   if (batteryObject.level >= 0.9) {
     document.querySelector(
@@ -216,35 +204,4 @@ function bgImg2() {
 
 function bgImg3() {
   document.querySelector("body").style.backgroundImage = "url(images/bg3.jpg)";
-}
-
-/////////////
-////// Random Folder Placement /////////////
-////////////
-
-// collect all the divs
-var folderDivs = document.querySelectorAll(".folder-container div");
-// get window width and height
-var winWidth = window.innerWidth;
-var winHeight = window.innerHeight;
-
-// i stands for "index". you could also call this banana or haircut. it's a variable
-for (var i = 0; i < folderDivs.length; i++) {
-  // shortcut! the current div in the list
-  var thisDiv = folderDivs[i];
-
-  // get random numbers for each element
-  var imgSizeWithOffset = 200;
-  // get random numbers for each element
-  randomTop = getRandomNumber(0, winHeight - imgSizeWithOffset);
-  randomLeft = getRandomNumber(0, winWidth - imgSizeWithOffset);
-
-  // update top and left position
-  thisDiv.style.top = randomTop + "px";
-  thisDiv.style.left = randomLeft + "px";
-}
-
-// function that returns a random number between a min and max
-function getRandomNumber(min, max) {
-  return Math.random() * (max - min) + min;
 }
