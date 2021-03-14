@@ -68,26 +68,23 @@
                 <p>Please select your background</p>
                 <div class="row">
                     <div class="col-3">
-                        <span class="plus" onclick="bgImgNone();">+</span>
                         <div id="bg-img-1" onclick="bgImgNone();"></div>
                         <p>None</p>
                     </div>
                     <div class="col-3">
                         <div id="bg-img-2" onclick="bgImg1();">
-                            <span class="plus" onclick="bgImg1();">+</span>
                             <img src="/images/bg-img-1.jpg" />
                         </div>
                         <p>Mountains</p>
                     </div>
                     <div class="col-3">
-                        <span class="plus" onclick="bgImg2();">+</span>
+
                         <div id="bg-img-3" onclick="bgImg2();">
                             <img src="/images/bg-img-2.jpg" />
                         </div>
                         <p>Beach</p>
                     </div>
                     <div class="col-3">
-                        <span class="plus" onclick="bgImg3();">+</span>
                         <div id="bg-img-4" onclick="bgImg3();">
                             <img src="/images/bg-img-3.jpg" />
                         </div>
@@ -227,20 +224,36 @@
         </div>
     </nav>
 
+
     <div class="folder-container-1">
         <div class="folder-1 resize-drag projects-folder" data-target="#myProjects">
             <img src="images/folder.png" id="folders" title="folder" alt="folder" />
             <p>Projects</p>
         </div>
+        <div class="folder-1 resize-drag components-folder" data-target="#myComponents">
+            <img src="images/folder.png" id="folders" title="folder" alt="folder" />
+            <p>Components</p>
+        </div>
+        <div class="folder-1 resize-drag background-folder" onclick="bgImg1();">
+            <img src="images/folder.png" id="folders" title="folder" alt="folder" />
+            <p>Change Background</p>
+        </div>
         <div class="folder-1 resize-drag about-folder" data-target="#aboutMe">
             <img src="images/folder.png" id="folders" title="folder" alt="folder" />
             <p>About Me</p>
         </div>
+       
+    </div>
+
+    <div class="folder-container-2">
+      
+        
         <div class="folder-1 resize-drag readme-file" data-target="#readMe">
             <img src="images/readme.png" id="folders" title="folder" alt="folder" />
             <p>readme.md</p>
         </div>
     </div>
+
 
     <!-- Modal -->
     <div class="modal fade" id="myProjects" tabindex="-1" role="dialog" aria-labelledby="myProjects" aria-hidden="true">
@@ -538,12 +551,12 @@
             var now = new Date();
             var hour = now.getHours();
             if (hour <= 11) {
-                document.getElementById("time").innerHTML = `Good morning, `;
+                document.getElementById("time").innerHTML = `Good morning `;
             } else if (hour >= 12 <= 17) {
-                document.getElementById("time").innerHTML = `Good afternoon, `;
+                document.getElementById("time").innerHTML = `Good afternoon `;
             }
             if (hour >= 18) {
-                document.getElementById("time").innerHTML = `Good evening, `;
+                document.getElementById("time").innerHTML = `Good evening `;
             }
         }
     </script>
@@ -556,6 +569,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.6/interact.min.js"></script>
     <script src="js/drag.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/folder-dbl.js"></script>
     <script src="js/loader.js"></script>
     <script>
         jQuery(document).ready(function($) {
@@ -565,5 +579,4 @@
         });
     </script>
 </body>
-
 </html>
