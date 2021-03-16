@@ -439,23 +439,29 @@ textarea {
   width: 100%;
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.2) !important;
-  border-radius: 4px;
-  height: 110px;
+  border-radius: 100%;
+  height: 68px;
+  transition: 0.3s;
+
 }
 #bg-img-1 {
   width: 100%;
   background: rgba(0, 0, 0, 0.2) !important;
   border: 2px solid rgba(0, 0, 0, 0.2) !important;
-  border-radius: 4px;
-  height: 110px;
+  border-radius: 100%;
+  height: 68px;
+  transition: 0.3s;
+
 }
 
 #bg-container img:hover,
 #bg-img-1:hover {
-  opacity: 0.9;
+  opacity: 1;
   cursor: pointer;
-  transform: scale(1.06);
-  transition: 0.4s;
+  transform: scale(1.1);
+  transition: 0.3s;
+  opacity: .7;
+
 }
 
 .plus {
