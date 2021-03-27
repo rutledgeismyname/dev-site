@@ -151,6 +151,6 @@ function bgMountains() {
 function bgPaint() {
   document.querySelector("body").style.backgroundImage = "url(images/paint.jpg)";
 }
-function bgRocks() {
+/*function bgRocks() {
   document.querySelector("body").style.backgroundImage = "url(images/rocks.jpg)";
-}
+}*/
