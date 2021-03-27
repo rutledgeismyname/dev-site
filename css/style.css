@@ -21,7 +21,7 @@ CSS INDEX
 :root {
   --background: url("/images/bgnone.jpg");
   --text-color: #fff;
-  --font-size: 13px;
+  --font-size: 10px;
   --logo: url("/images/apple-c-icon.png");
   --font-family: "Rubik", sans-serif;
 }
