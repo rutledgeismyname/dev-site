@@ -141,13 +141,16 @@ function bgImgNone() {
   document.querySelector("body").style.backgroundImage =
     "url(images/bgnone.jpg)";
 }
-function bgImg1() {
-  document.querySelector("body").style.backgroundImage = "url(images/bg1.jpg)";
+function bgSand() {
+  document.querySelector("body").style.backgroundImage = "url(images/sand.jpg)";
 }
-function bgImg2() {
-  document.querySelector("body").style.backgroundImage = "url(images/bg2.jpg)";
+function bgMountains() {
+  document.querySelector("body").style.backgroundImage = "url(images/mountains.jpg)";
 }
 
-function bgImg3() {
-  document.querySelector("body").style.backgroundImage = "url(images/bg3.jpg)";
+function bgPaint() {
+  document.querySelector("body").style.backgroundImage = "url(images/paint.jpg)";
+}
+function bgRocks() {
+  document.querySelector("body").style.backgroundImage = "url(images/rocks.jpg)";
 }
