@@ -108,6 +108,7 @@ th {
   cursor: crosshair;
   width: 100%;
   z-index: 999999;
+  
 }
 .modal-backdrop.show {
   opacity: 0.2;
@@ -120,14 +121,29 @@ th {
   overflow-y: scroll;
   height: 530px;
 }
+
 .modal-content {
   border: 0px;
   cursor: pointer;
+  
 }
 .modal-header {
   background: rgba(0, 0, 0, 0.75);
   border: 0px;
   cursor: default;
+  height: 40px;
+}
+.modal-folder-heading {
+  position: absolute;
+  font-size: 13px;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%, 1%);
+
+}
+.modal-folder-heading img{
+  max-width: 20px;
+  margin-top: -5px;
 }
 .about-me-modal p,
 .about-me-modal h2,

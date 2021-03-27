@@ -100,15 +100,6 @@ $(".organizeFolder").click(function () {
     $(".resize-drag").removeAttr("style");
   }, 600);
  });
-/*
-$(".organizeFolder").click(function () {
-  // Reset position
-  $(".resize-drag").removeAttr("style").css("transition", ".5s");
-  setTimeout(function () {
-    $(".resize-drag").removeAttr("style");
-  }, 600);
-});*/
-
 
 //////////////
 /////// Batter Level ////////////
