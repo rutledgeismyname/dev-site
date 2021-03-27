@@ -337,7 +337,7 @@ th {
 
 /*** 6. Folders, Folder Container, Dragging ***/
 .folder-container-1 {
-  width: 82px;
+  width: 78px;
   position: absolute;
   right: 30px;
   top: 10%;
@@ -345,7 +345,7 @@ th {
   display: none;
 }
 .folder-container-2 {
-  width: 82px;
+  width: 78px;
   position: absolute;
   right: 150px;
   top: 10%;
@@ -355,7 +355,7 @@ th {
 
 
 #folders {
-  width: 82px;
+  width: 78px;
   display: flex;
   align-content: center;
   justify-content: center;
