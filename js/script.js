@@ -154,7 +154,7 @@ function bgPaint() {
 function bgRocks() {
   document.querySelector("body").style.backgroundImage = "url(images/rocks.jpg)";
 }
-/*
+
 var images = [];
 function preload() {
     for (var i = 0; i < arguments.length; i++) {
@@ -170,4 +170,3 @@ preload(
     "images/paint.jpg",
     "images/rocks.jpg)",
 )
-*/
