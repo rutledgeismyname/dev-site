@@ -154,3 +154,19 @@ function bgPaint() {
 /*function bgRocks() {
   document.querySelector("body").style.backgroundImage = "url(images/rocks.jpg)";
 }*/
+
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "https://dev.rutledgeismyname.com/images/bgnone.jpg",
+    "https://dev.rutledgeismyname.com/images/sand.jpg",
+    "https://dev.rutledgeismyname.com/images/mountains.jpg",
+    "https://dev.rutledgeismyname.com/images/paint.jpg"
+)
