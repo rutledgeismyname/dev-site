@@ -523,7 +523,7 @@ textarea {
 /*** 10. Media Querey 1 handling width of 870px or less ***/
 @media only screen and (max-width: 870px) {
   table{
-    font-size: 11px;
+    font-size: 10px;
   }
   .bluetooth,
   .wifi,
