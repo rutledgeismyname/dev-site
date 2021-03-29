@@ -591,12 +591,12 @@ textarea {
     font-size: 10px;
   }
   .notification{
-    bottom:110px;
-    background: rgba(0, 0, 0, 0.6);
+    bottom:105px;
+    background: rgba(0, 0, 0, 0.7);
   }
   .notification header span{
     font-size: 12px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
   }
   .notification h5 {
     font-size: 13px;
