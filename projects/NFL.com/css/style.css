@@ -1,0 +1,153 @@
+/**
+* Template Name: Nfl.com Redesign
+* Author: Copyright NFL.com | Chris Rutledge
+**/
+/********** NFL Fonts **********/
+
+:root {
+    --main-bg: rgb(25, 25, 25);
+    --slate-bg: #212121;
+    --dark-blue: #0b132bff;
+    --medium-blue: #013369ff;
+    --light-ryb: #1b48e0ff;
+    --red-font: #cc0300ff;
+    --white: #fdfdfdff;
+    --font-family: arial;
+}
+html, body{
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--main-bg);
+    font-family: va(--font-family);
+}
+footer{
+   
+    text-align: left;
+    box-shadow: 0px -3px 12px rgb(0, 0, 0, .5);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 50px;
+ 
+   
+}
+footer a{
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    background:var(--medium-blue);
+    padding: 10px;
+    height: 85px;
+    border: 0px !important;
+    list-style: none;
+    box-shadow: 0px 3px 12px rgb(0, 0, 0, .5);
+}
+nav a{
+    color: var(--white) !important;
+
+    
+}
+section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ad{
+    width: 728px;
+    height: 90px;
+}
+.accordion-button{
+    background: var(--slate-bg) !important;
+    color: var(--white) !important;
+    border:0px !important;
+ 
+}
+.accordion-item{
+    background: var(--white) !important;
+    color: var(--main-bg);
+    border:0px !important;
+
+}
+.nav-link:hover{
+    opacity: .6 !important;
+}
+.card{
+    background: var(--slate-bg);
+    color: var(--white);
+}
+.container-fluid{
+    padding: 0px;
+    margin: 0px;
+}
+.form-control{
+    background: rgba(255, 255, 255, .8);
+    border:none;
+}
+.footer-heading{
+    color: var(--white);
+}
+
+.hero{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+.promo{
+    width: 100%;
+    background: var(--light-ryb);
+    color: var(--white);
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 0 3px 0;
+    line-height: 60px;
+}
+.navbar-brand{
+    margin-left: 10px;
+    width: 30px;
+}
+.section-heading{
+    color: var(--white);
+    text-align: left;
+    padding-bottom: 5px;;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    margin-bottom: 20px;
+}
+.sign-in{
+    background: var(--dark-blue);
+    border-radius: 5px;
+    width: 75px;
+    text-align: center;
+    height: auto;
+    margin-left: 5px;
+}
+.sign-in:hover{
+    background: var(--red-font);
+    color: var(--white) !important;
+    opacity: 1 !important;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .ad{
+        width: 100%;
+        height: auto;
+    }
+nav{
+    background:var(--medium-blue);
+    padding: 0px;
+    height: auto;
+    box-shadow: 0px 3px 12px rgb(0, 0, 0, .5);
+}
+
+    nav a, nav input{
+        visibility: hidden;
+    }
+}

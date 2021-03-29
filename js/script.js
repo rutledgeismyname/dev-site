@@ -67,6 +67,7 @@ function hideLogin() {
   $(".form-container").css("display", "none");
   $(".folder-container-1").css("display", "block");
   $(".folder-container-2").css("display", "block");
+  $(".notification").css("display", "block");
   $(".navbar").css("visibility", "visible");
 }
 
@@ -155,18 +156,10 @@ function bgPaint() {
   document.querySelector("body").style.backgroundImage = "url(images/rocks.jpg)";
 }*/
 
-var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-
-//-- usage --//
-preload(
-    "https://dev.rutledgeismyname.com/images/bgnone.jpg",
-    "https://dev.rutledgeismyname.com/images/sand.jpg",
-    "https://dev.rutledgeismyname.com/images/mountains.jpg",
-    "https://dev.rutledgeismyname.com/images/paint.jpg"
-)
+//////////////
+/////// Custom Notification Hiding ////////////
+/////////////
+var notificationClosed = document.querySelector('.closed');
+notificationClosed.addEventListener('click', function () {
+  document.querySelector('.notification').style.display = 'none';
+});
