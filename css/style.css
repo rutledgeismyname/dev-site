@@ -593,6 +593,7 @@ textarea {
   .notification{
     bottom:105px;
     background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #999;
   }
   .notification header span{
     font-size: 12px;
