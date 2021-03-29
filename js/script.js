@@ -67,7 +67,7 @@ function hideLogin() {
   $(".form-container").css("display", "none");
   $(".folder-container-1").css("display", "block");
   $(".folder-container-2").css("display", "block");
-  $(".notification").css("display", "block");
+  $(".notification").delay(6500).fadeIn();
   $(".navbar").css("visibility", "visible");
 }
 
@@ -160,6 +160,8 @@ function bgPaint() {
 //////////////
 /////// Custom Notification Hiding ////////////
 /////////////
+
+
 function closeNotification() {
   document.querySelector('.notification').style.display = 'none';
 }
