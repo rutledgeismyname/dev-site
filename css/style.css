@@ -592,7 +592,11 @@ textarea {
   }
   .notification{
     bottom:105px;
-    background: rgba(0, 0, 0, 0.5);
+    /*background: rgba(0, 0, 0, 0.5);*/
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    -moz-backdrop-filter: blur(7px);
+    -o-background-filter: blur(7px);
     
   }
   .notification header{
