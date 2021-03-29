@@ -75,6 +75,7 @@ function showLogin() {
   $(".form-container").css("display", "block");
   $(".folder-container-1").css("display", "none");
   $(".folder-container-2").css("display", "none");
+  $(".notification").css("display", "none");
   $(".navbar").css("visibility", "hidden");
 }
 
