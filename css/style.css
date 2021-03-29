@@ -95,11 +95,11 @@ th {
   bottom:30px;
   right: 15px;
   width: 320px;
-  /*background: rgba(0, 0, 0, 0.5);*/
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  -moz-backdrop-filter: blur(5px);
-  -o-background-filter: blur(5px);
+  -webkit-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  -o-background-filter: blur(4px);
   z-index: 99999999;
   height: 100px;
   border-radius: 8px;
