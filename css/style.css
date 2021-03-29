@@ -110,7 +110,7 @@ th {
 
 
 .notification header{
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.65);
   color: var(--text-color);
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -154,6 +154,7 @@ th {
   background: rgba(0, 0, 0, 0.3);
   color: #eee;
   transition: .2s;
+  border: 1px solid rgba(244, 244, 244, 0.6);
 }
 .notification .closed:hover{
   opacity: .6;
