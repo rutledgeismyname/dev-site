@@ -163,6 +163,7 @@ function closeNotification() {
   document.querySelector('.notification').style.display = 'none';
 }
 
+// Fix below 
 /*
 const notificationClosed = document.querySelector('.closed');
 notificationClosed.addEventListener('click', function () {
