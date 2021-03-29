@@ -148,13 +148,13 @@ th {
   right: 5px;
   top: 5px;
   font-size: 10px;
-  width: 15px;
+  width: 16px;
   border-radius: 100%;
   text-align: center;
   background: rgba(0, 0, 0, 0.3);
   color: #eee;
   transition: .2s;
-  border: 1px solid rgba(244, 244, 244, 0.6);
+  border: 1px solid rgba(244, 244, 244, 0.4);
 }
 .notification .closed:hover{
   opacity: .6;
