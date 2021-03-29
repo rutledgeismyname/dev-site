@@ -138,7 +138,6 @@ th {
   top: 5px;
   font-size: 12px;
   color: #eee;
-  z-index: 9999999;
 }
 .notification .closed{
   position: absolute;
