@@ -92,14 +92,14 @@ th {
 /*** 4. TABLE/MODAL/NOTIFICATION Styles (includes modal, buttons, content within modals) ***/
 .notification{
   position: fixed;
-  bottom:100px;
-  left: 15px;
+  bottom:30px;
+  right: 15px;
   width: 320px;
   background: rgba(0, 0, 0, 0.2);
   z-index: 99999999;
   height: 100px;
   border-radius: 8px;
-  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s; /* don't forget to set a duration! */
   display: none;
 }
@@ -589,6 +589,18 @@ textarea {
 @media only screen and (max-width: 870px) {
   table{
     font-size: 10px;
+  }
+  .notification{
+    bottom:110px;
+  }
+  .notification header span{
+    font-size: 12px;
+  }
+  .notification h5 {
+    font-size: 13px;
+  }
+  .notification p{
+    font-size: 11px;
   }
   .bluetooth,
   .wifi,
