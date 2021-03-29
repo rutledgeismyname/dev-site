@@ -595,13 +595,10 @@ textarea {
     font-size: 10px;
   }
   .notification{
-    bottom:105px;
-    
+    bottom:95px;
   }
-
   .notification header span{
     font-size: 13px;
-   
   }
   .notification h5 {
     font-size: 13px;
