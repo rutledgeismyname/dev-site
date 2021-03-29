@@ -92,7 +92,7 @@ th {
 /*** 4. TABLE/MODAL/NOTIFICATION Styles (includes modal, buttons, content within modals) ***/
 .notification{
   position: fixed;
-  bottom:20px;
+  bottom:45px;
   left: 15px;
   width: 320px;
   background: rgba(0, 0, 0, 0.2);

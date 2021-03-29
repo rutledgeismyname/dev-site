@@ -159,7 +159,7 @@ function bgPaint() {
 //////////////
 /////// Custom Notification Hiding ////////////
 /////////////
-var notificationClosed = document.querySelector('.closed');
-notificationClosed.addEventListener('click', function () {
+const notificationClosed = document.querySelector('.closed');
+notificationClosed.addEventListener('click', 'touch', function () {
   document.querySelector('.notification').style.display = 'none';
 });
