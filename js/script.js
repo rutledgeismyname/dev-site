@@ -37,7 +37,7 @@ function clipAlert() {
   $("#clipAlert").show();
   setTimeout(function () {
     $("#clipAlert").hide();
-  }, 2400);
+  }, 2300);
 }
 
 //////////////
