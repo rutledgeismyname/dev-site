@@ -112,6 +112,7 @@ batteryPromise.then(batteryCallback);
 function batteryCallback(batteryObject) {
   printBatteryStatus(batteryObject);
 }
+
 function printBatteryStatus(batteryObject) {
   if (batteryObject.level >= 0.9) {
     document.querySelector(
@@ -126,7 +127,7 @@ function printBatteryStatus(batteryObject) {
       batteryObject.level * 100
     )}%</span>`;
   }
-  if (batteryObject.level <= 0.29) {
+  if (batteryObject.level <= 0.10) {
     
     setTimeout(function() { alert("Looks like you are running low on battery life. You should plug in."); }, 15500);
     document.querySelector(
@@ -136,6 +137,13 @@ function printBatteryStatus(batteryObject) {
     )}%</span>`;
   }
 }
+//////////////
+/////// Checking battery status every 5 seconds ////////////
+/////////////
+setInterval(function() {
+  batteryPromise.then(batteryCallback);
+  console.log("Checking battery status every 5 seconds");
+} ,5000)
 
 //////////////
 /////// Change Background for Users ////////////
