@@ -67,7 +67,7 @@ function hideLogin() {
   $(".form-container").css("display", "none");
   $(".folder-container-1").css("display", "block");
   $(".folder-container-2").css("display", "block");
-  $(".notification").delay(4300).fadeIn();
+  $(".notification").delay(12200).fadeIn();
   $(".navbar").css("visibility", "visible");
 }
 
