@@ -466,6 +466,11 @@ th {
   -moz-backdrop-filter: blur(7px);
   -o-background-filter: blur(7px);
 }
+@supports not (backdrop-filter: blur()){
+  .form-container{
+    background-color: rgba(0, 0, 0, .3);
+  }
+}
 .form-signin {
   width: 100%;
   max-width: 390px;
