@@ -36,6 +36,9 @@ body.retro {
   --background: url("/images/retro.jpg");
   --logo: url("/images/apple-c-icon-retro.png");
 }*/
+a {
+  text-decoration: none !important;
+}
 body {
   background-repeat: no-repeat;
   height: 100vh;
@@ -96,31 +99,28 @@ th {
   right: 15px;
   width: 340px;
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(4px);
-  -moz-backdrop-filter: blur(4px);
-  -o-background-filter: blur(4px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -o-background-filter: blur(10px);
   z-index: 99999999;
-  height: 100px;
+  height: 105px;
   border-radius: 8px;
   animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s; /* don't forget to set a duration! */
   display: none;
+  transition: .2s;
 }
-.notification a{
- text-decoration: underline;
- color: #ffffff;
+.notification:hover{
+  cursor: pointer;
+  opacity: .85;
+  transition: .2s;
 }
-.notification a:hover{
-  opacity: .8;
-}
-
 .notification header{
   background-color: rgba(0, 0, 0, 0.3);
   color: var(--text-color);
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
-
 }
 .notification header span{
   text-align: left;
@@ -138,7 +138,7 @@ th {
 .notification p{
   text-align: left;
   font-size: 13px;
-  padding: 0px 0px 0px 10px;
+  padding: 0px 10px 0px 10px;
   color: #eee;
   white-space: pre-wrap;
 }
@@ -160,7 +160,8 @@ th {
   background: rgba(0, 0, 0, 0.3);
   color: #eee;
   transition: .2s;
-  border: 1px solid rgba(244, 244, 244, 0.4);
+  border: 1px solid rgba(244, 244, 244, 0.3);
+  z-index: 99999999999;
 }
 .notification .closed:hover{
   opacity: .6;

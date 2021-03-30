@@ -67,7 +67,7 @@ function hideLogin() {
   $(".form-container").css("display", "none");
   $(".folder-container-1").css("display", "block");
   $(".folder-container-2").css("display", "block");
-  $(".notification").delay(6500).fadeIn();
+  $(".notification").delay(50).fadeIn();
   $(".navbar").css("visibility", "visible");
 }
 
@@ -149,13 +149,13 @@ function bgSand() {
 function bgMountains() {
   document.querySelector("body").style.backgroundImage = "url(images/mountains.jpg)";
 }
-
+/*
 function bgPaint() {
   document.querySelector("body").style.backgroundImage = "url(images/paint.jpg)";
-}
-/*function bgRocks() {
-  document.querySelector("body").style.backgroundImage = "url(images/rocks.jpg)";
 }*/
+function bgRocks() {
+  document.querySelector("body").style.backgroundImage = "url(images/rocks.jpg)";
+}
 
 //////////////
 /////// Custom Notification Hiding ////////////

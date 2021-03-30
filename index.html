@@ -32,10 +32,10 @@
 </head>
 
 <body class="background-fun" id="body" onmousemove="sleepOff();" ontouchmove="sleepOff();">
-    <div class="loader">
+    <!--<div class="loader">
         <img src="/images/apple-c-icon-retro.png" alt="Chris Rutledge" title="Chris Rutledge" class="animate__animated animate__repeat-3" />
         <span id="time"></span>
-    </div>
+    </div>-->
     <div class="form-container" id="form">
         <form class="form-signin">
             <center>
@@ -85,8 +85,8 @@
                         <p>Beach</p>
                     </div>
                     <div class="col-3">
-                        <div id="bg-img-4" onclick="bgPaint();">
-                            <img src="/images/paint-thumb.jpg" alt="paint" title="paint" />
+                        <div id="bg-img-4" onclick="bgRocks();">
+                            <img src="/images/rocks-thumb.jpg" alt="rocks" title="rocks" />
                         </div>
                         <p>Paint</p>
                     </div>
@@ -540,11 +540,20 @@
     </div>
 
     <!-- Notification -->
-    <div class="notification animate__animated ">
-       <header><img src="/images/fav-cr-icon.png" width="17" style="border-radius: 100%; margin: 5px 5px 5px 10px;"><span>Notification</span> <div class="time">a second ago</div> <div class="closed" onclick="closeNotification();">X</div></header>
-       <h5>Components Library</h5>
-       <p>While visiting, how about checking out mu component library? <a href="https://components.rutledgeismyname.com/" target="_blank">View Now</a></p>
-    </div>
+
+        <div class="notification animate__animated ">
+            <header>
+                <img src="/images/fav-cr-icon.png" width="17" style="border-radius: 100%; margin: 5px 5px 5px 10px;">
+                <span>Notification</span>
+                <div class="time">a second ago</div>
+                <div class="closed" onclick="closeNotification();">X</div>
+            </header>
+            <a href="https://components.rutledgeismyname.com/" target="_blank">
+            <h5>Component Library</h5>
+            <p>Click me to view a collection of helpful components created by yours truly.</p>
+        </a>
+        </div>
+    
 
     <script>
         //////////////
