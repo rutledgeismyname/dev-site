@@ -127,7 +127,7 @@ function printBatteryStatus(batteryObject) {
     )}%</span>`;
   }
   if (batteryObject.level <= 0.39) {
-    alert("Looks like you are running low on battery life. You should plug in. ");
+    alert("Looks like you are running low on battery life. You should plug in.").delay(9500);
     document.querySelector(
       ".battery"
     ).innerHTML = `<i class="fa fa-battery-quarter"> <span>${Math.trunc(
