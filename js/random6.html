@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="randomNum"></p>
+
+    
+</body>
+<script>
+
+//const randomNumber = Math.trunc(Math.random() * 999999) + 1;
+
+
+//{document.querySelector(".randomNum").innerHTML = `#${randomNumber}`;}
+
+
+var randomNumber = [];
+while(randomNumber.length < 10){
+    var r = Math.floor(Math.random() * 999999) + 1;
+    if(randomNumber.indexOf(r) === -1) randomNumber.push(r);
+
+}
+{document.querySelector(".randomNum").innerHTML = `${randomNumber}`;}
+
+
+</script>
+</html>
