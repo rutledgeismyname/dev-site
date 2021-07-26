@@ -1,0 +1,42 @@
+
+ :root {
+  --text-color: #fff;
+  --font-family: "Rubik", sans-serif;
+}
+ /* Paste this css to your style sheet file or under head tag */
+      /* This only works with JavaScript, 
+      if it's not present, don't show loader */
+      .no-js #loader { display: none;  }
+      .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+      .loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height:100vh;
+        z-index: 9999;
+        background: center no-repeat #fff;
+
+      }
+.loader span{
+  position:absolute;
+  top: 46%;
+  left: 50%;
+  color: #ccc !important;
+  font-size: 22px !important;
+  transform: translate(-50%, 50%);
+  font-size: 17px !important;
+
+}
+.loader img{
+  position: relative;
+  width: 45px;
+  border-radius: 6px;
+  animation:hinge; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  animation-delay: 1.3s; /* don't forget to set a duration! */
+  top: 45%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -20px;
+}

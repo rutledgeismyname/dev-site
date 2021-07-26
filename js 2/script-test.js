@@ -1,4 +1,4 @@
-"use strict";
+/*"use strict";*/
 
 //////////////
 /////// Easter Egg ////////////
@@ -19,7 +19,7 @@ var topRightDateString = topRightDate.toDateString();
 document.getElementById("date").innerHTML = `${topRightDateString}`;
 
 //////////////
-/////// Copy URL so users can share ////////////
+/////// Copy URL so user can share ////////////
 /////////////
 const $temp = $("<input>");
 const $url = $(location).attr("href");
@@ -37,14 +37,14 @@ function clipAlert() {
   $("#clipAlert").show();
   setTimeout(function () {
     $("#clipAlert").hide();
-  }, 2300);
+  }, 2400);
 }
 
 //////////////
 /////// Username login ////////////
 /////////////
 
-const randomUsername = Math.trunc(Math.random() * 999) + 1;
+const randomNumber = Math.trunc(Math.random() * 999) + 1;
 const nameInput = document.getElementById("name");
 
 document
@@ -59,23 +59,19 @@ document
     } else {
       document.getElementById(
         "username"
-      ).innerHTML = `Welcome, user${randomUsername}`;
+      ).innerHTML = `Welcome, user${randomNumber}`;
     }
   });
 
 function hideLogin() {
   $(".form-container").css("display", "none");
-  $(".folder-container-1").css("display", "block");
-  $(".folder-container-2").css("display", "block");
-  $(".notification").delay(12200).fadeIn();
+  $(".folder-container").css("display", "block");
   $(".navbar").css("visibility", "visible");
 }
 
 function showLogin() {
   $(".form-container").css("display", "block");
-  $(".folder-container-1").css("display", "none");
-  $(".folder-container-2").css("display", "none");
-  $(".notification").css("display", "none");
+  $(".folder-container").css("display", "none");
   $(".navbar").css("visibility", "hidden");
 }
 
@@ -93,15 +89,82 @@ function sleepOff() {
   document.querySelector("body").style.transitionDelay = ".3s";
 }
 
-// Reset Folder position on Clean Up
+//////////////
+/////// Force Double Click Mobile.Desktop  ////////////
+/////////////
+
+var touchtime = 0;
+
+$(".projects-folder").on("click", function () {
+  if (touchtime == 0) {
+    // set first click
+    touchtime = new Date().getTime();
+  } else {
+    // compare first click to this click and see if they occurred within double click threshold
+    if (new Date().getTime() - touchtime < 800) {
+      // double click occurred
+      $("#myProjects").modal();
+
+      touchtime = 0;
+    } else {
+      // not a double click so set as a new first click
+      touchtime = new Date().getTime();
+    }
+  }
+});
+$(".about-folder").on("click", function () {
+  if (touchtime == 0) {
+    // set first click
+    touchtime = new Date().getTime();
+  } else {
+    // compare first click to this click and see if they occurred within double click threshold
+    if (new Date().getTime() - touchtime < 800) {
+      // double click occurred
+      $("#aboutMe").modal();
+
+      touchtime = 0;
+    } else {
+      // not a double click so set as a new first click
+      touchtime = new Date().getTime();
+    }
+  }
+});
+$(".readme-file").on("click", function () {
+  if (touchtime == 0) {
+    // set first click
+    touchtime = new Date().getTime();
+  } else {
+    // compare first click to this click and see if they occurred within double click threshold
+    if (new Date().getTime() - touchtime < 800) {
+      // double click occurred
+      $("#readMe").modal();
+
+      touchtime = 0;
+    } else {
+      // not a double click so set as a new first click
+      touchtime = new Date().getTime();
+    }
+  }
+});
+
+//////////////
+/////// Mode Switch ////////////
+/////////////
+/*
+const modeSwitch = document.querySelector(".retro");
+
+modeSwitch.addEventListener("click", function () {
+  document.body.classList.toggle("retro").css("transition", ".3s");
+});*/
+
 $(".organizeFolder").click(function () {
   // Reset position
+
   $(".resize-drag").removeAttr("style").css("transition", ".5s");
-  $(".resize-drag").removeAttr('data-x data-y');
   setTimeout(function () {
     $(".resize-drag").removeAttr("style");
   }, 600);
- });
+});
 
 //////////////
 /////// Batter Level ////////////
@@ -112,7 +175,6 @@ batteryPromise.then(batteryCallback);
 function batteryCallback(batteryObject) {
   printBatteryStatus(batteryObject);
 }
-
 function printBatteryStatus(batteryObject) {
   if (batteryObject.level >= 0.9) {
     document.querySelector(
@@ -127,23 +189,14 @@ function printBatteryStatus(batteryObject) {
       batteryObject.level * 100
     )}%</span>`;
   }
-  if (batteryObject.level <= 0.25) {
-    //setTimeout(function() { alert("Looks like you are running low on battery life. You should plug in."); }, 15500);
+  if (batteryObject.level <= 0.39) {
     document.querySelector(
       ".battery"
     ).innerHTML = `<i class="fa fa-battery-quarter"> <span>${Math.trunc(
       batteryObject.level * 100
     )}%</span>`;
   }
-  
 }
-//////////////
-/////// Checking battery status every 5 seconds ////////////
-/////////////
-setInterval(function() {
-  batteryPromise.then(batteryCallback);
-  console.log("Checking battery status every 10 seconds");
-} ,10000)
 
 //////////////
 /////// Change Background for Users ////////////
@@ -153,33 +206,44 @@ function bgImgNone() {
   document.querySelector("body").style.backgroundImage =
     "url(images/bgnone.jpg)";
 }
-function bgSand() {
-  document.querySelector("body").style.backgroundImage = "url(images/sand.jpg)";
+function bgImg1() {
+  document.querySelector("body").style.backgroundImage = "url(images/bg1.jpg)";
 }
-function bgMountains() {
-  document.querySelector("body").style.backgroundImage = "url(images/mountains.jpg)";
-}
-function bgRocks() {
-  document.querySelector("body").style.backgroundImage = "url(images/rocks.jpg)";
+function bgImg2() {
+  document.querySelector("body").style.backgroundImage = "url(images/bg2.jpg)";
 }
 
-/*
-function bgPaint() {
-  document.querySelector("body").style.backgroundImage = "url(images/paint.jpg)";
-}*/
+function bgImg3() {
+  document.querySelector("body").style.backgroundImage = "url(images/bg3.jpg)";
+}
 
-//////////////
-/////// Custom Notification Hiding ////////////
 /////////////
+////// Random Folder Placement /////////////
+////////////
 
-function closeNotification() {
-  document.querySelector('.notification').style.display = 'none';
+// collect all the divs
+var folderDivs = document.querySelectorAll(".folder-container .resize-drag");
+// get window width and height
+var winWidth = window.innerWidth;
+var winHeight = window.innerHeight;
+
+// i stands for "index". you could also call this banana or haircut. it's a variable
+for (var i = 0; i < folderDivs.length; i++) {
+  // shortcut! the current div in the list
+  var thisDiv = folderDivs[i];
+
+  // get random numbers for each element
+  var imgSizeWithOffset = 400;
+  // get random numbers for each element
+  randomTop = getRandomNumber(100, winHeight - imgSizeWithOffset);
+  randomLeft = getRandomNumber(0, winWidth - imgSizeWithOffset);
+
+  // update top and left position
+  thisDiv.style.top = randomTop + "px";
+  thisDiv.style.left = randomLeft + "px";
 }
 
-// Fix below 
-/*
-const notificationClosed = document.querySelector('.closed');
-notificationClosed.addEventListener('click', function () {
-  document.querySelector('.notification').style.display = 'none';
-});
-*/
+// function that returns a random number between a min and max
+function getRandomNumber(min, max) {
+  return Math.random() * (max - min) + min;
+}
