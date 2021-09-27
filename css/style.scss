@@ -13,8 +13,10 @@ CSS INDEX
 10. Media Queries
 ------------
 */
+
 /*** 1. IMPORTS ***/
 @import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
 /*** 2. FUNDAMENTALS ***/
 :root {
   --background: url("/images/mountains.jpg");
@@ -23,7 +25,6 @@ CSS INDEX
   --logo: url("/images/apple-c-icon.png");
   --font-family: "Rubik", sans-serif;
 }
-
 html,
 body {
   overflow: hidden;
@@ -34,7 +35,6 @@ body {
 a {
   text-decoration: none !important;
 }
-
 body {
   background-repeat: no-repeat;
   height: 100vh;
@@ -44,7 +44,6 @@ body {
   color: var(--text-color) !important;
   font-family: var(--font-family) !important;
 }
-
 p {
   font-size: var(--font-size);
   font-family: var(--font-family) !important;
@@ -52,24 +51,20 @@ p {
   padding-top: 5px;
   color: var(--text-color) !important;
 }
-
 table {
   width: 100%;
   font-size: var(--font-size);
   color: var(--text-color) !important;
 }
-
 th {
   background-color: rgba(0, 0, 0, 0.35) !important;
   border-bottom: 1px solid rgba(128, 128, 128, 0.459);
   color: var(--text-color) !important;
   border-right: 1px solid rgba(128, 128, 128, 0.459);
 }
-
 th:hover {
   cursor: default;
 }
-
 td,
 th {
   padding-left: 10px;
@@ -79,17 +74,10 @@ th {
 
 /*** 3. CLIP ART ***/
 #clipAlert {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #clipAlert p {
   width: 150px;
   height: 40px;
@@ -100,11 +88,10 @@ th {
   color: var(--text-color) !important;
   text-shadow: 1px 1px 1px black;
 }
-
 /*** 4. TABLE/MODAL/NOTIFICATION Styles (includes modal, buttons, content within modals) ***/
-.notification {
+.notification{
   position: fixed;
-  bottom: 50px;
+  bottom:50px;
   right: 15px;
   width: 340px;
   background: rgba(0, 0, 0, 0.5);
@@ -115,38 +102,28 @@ th {
   z-index: 99999999;
   height: 105px;
   border-radius: 8px;
-  -webkit-animation: fadeInRight;
-          animation: fadeInRight;
-  /* referring directly to the animation's @keyframe declaration */
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  /* don't forget to set a duration! */
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
   display: none;
-  -webkit-transition: .2s;
   transition: .2s;
 }
-
-.notification:hover {
+.notification:hover{
   cursor: pointer;
   opacity: .85;
-  -webkit-transition: .2s;
   transition: .2s;
 }
-
-.notification header {
+.notification header{
   background-color: rgba(0, 0, 0, 0.3);
   color: var(--text-color);
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
-
-.notification header span {
+.notification header span{
   text-align: left;
   font-size: 13px;
   padding-left: 5px;
   color: #eee;
 }
-
 .notification h5 {
   text-align: left;
   font-size: 14px;
@@ -154,24 +131,21 @@ th {
   color: #fff;
   font-weight: bold;
 }
-
-.notification p {
+.notification p{
   text-align: left;
   font-size: 13px;
   padding: 0px 10px 0px 10px;
   color: #eee;
   white-space: pre-wrap;
 }
-
-.notification .time {
+.notification .time{
   position: absolute;
   right: 30px;
   top: 5px;
   font-size: 12px;
   color: #eee;
 }
-
-.notification .closed {
+.notification .closed{
   position: absolute;
   right: 5px;
   top: 5px;
@@ -181,24 +155,19 @@ th {
   text-align: center;
   background: rgba(0, 0, 0, 0.3);
   color: #eee;
-  -webkit-transition: .2s;
   transition: .2s;
   border: 1px solid rgba(244, 244, 244, 0.3);
   z-index: 99999999999;
 }
-
-.notification .closed:hover {
+.notification .closed:hover{
   opacity: .6;
   cursor: pointer;
-  -webkit-transition: .2s;
   transition: .2s;
 }
-
 .dark-table {
   background-color: #332c2a;
   color: var(--text-color) !important;
 }
-
 .light-light {
   background: #333333;
   color: var(--text-color) !important;
@@ -208,17 +177,15 @@ th {
 .light-light:hover {
   background: rgba(21, 109, 215, 0.8);
 }
-
 .modal {
   cursor: crosshair;
   width: 100%;
   z-index: 999999;
+  
 }
-
 .modal-backdrop.show {
   opacity: 0.2;
 }
-
 .modal-body {
   background: rgba(0, 0, 0, 0.8);
   border: 0px;
@@ -231,29 +198,26 @@ th {
 .modal-content {
   border: 0px;
   cursor: pointer;
+  
 }
-
 .modal-header {
   background: rgba(0, 0, 0, 0.75);
   border: 0px;
   cursor: default;
   height: 40px;
 }
-
 .modal-folder-heading {
   position: absolute;
   font-size: 13px;
   left: 50%;
   top: 2%;
-  -webkit-transform: translate(-50%, 1%);
-          transform: translate(-50%, 1%);
-}
+  transform: translate(-50%, 1%);
 
-.modal-folder-heading img {
+}
+.modal-folder-heading img{
   max-width: 20px;
   margin-top: -5px;
 }
-
 .about-me-modal p,
 .about-me-modal h2,
 .about-me-modal h3,
@@ -263,7 +227,6 @@ th {
   text-align: left;
   margin: 10px;
 }
-
 .about-me-modal img {
   margin: 10px;
 }
@@ -273,7 +236,6 @@ th {
   font-size: 30px;
   letter-spacing: 1px;
 }
-
 .green-button,
 .yellow-button,
 .red-button {
@@ -284,47 +246,38 @@ th {
   position: absolute;
   cursor: pointer;
 }
-
 .green-button {
   background-color: #72be47;
   top: 2%;
   left: 50px;
 }
-
 .yellow-button {
   background-color: #e0c04c;
   top: 2%;
   left: 30px;
 }
-
 .red-button {
   background-color: #ed655a;
   top: 2%;
   left: 10px;
 }
-
 .green-button:hover,
 .yellow-button:hover,
 .red-button:hover {
   opacity: 0.7;
 }
-
 .green-button:after {
-  content: "\2B0C";
-  /* This will render the '' */
+  content: "\2B0C"; /* This will render the '' */
   color: rgba(0, 0, 0, 0.4);
   top: -45%;
   left: 4%;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
+  transform: rotate(-25deg);
   position: absolute;
   font-size: 13px;
   visibility: hidden;
 }
-
 .yellow-button:after {
-  content: "\2212";
-  /* This will render the '-' */
+  content: "\2212"; /* This will render the '-' */
   color: rgba(0, 0, 0, 0.4);
   top: -5.5px;
   left: 1.4px;
@@ -332,21 +285,17 @@ th {
   font-size: 13px;
   visibility: hidden;
 }
-
 .red-button:after {
-  content: "\00d7";
-  /* This will render the 'X' */
+  content: "\00d7"; /* This will render the 'X' */
   color: rgba(0, 0, 0, 0.3);
   top: -5.5px;
   left: 1.4px;
   position: absolute;
   font-size: 13px;
 }
-
 .hobbies {
   width: 100%;
 }
-
 .hobbies p {
   background: rgba(0, 0, 0, 0.3);
   padding: 3px;
@@ -358,7 +307,6 @@ th {
   margin: 0px -9px 5px 10px;
   display: inline-block;
 }
-
 .progress {
   margin: -5px 10px -5px 10px;
   background: transparent;
@@ -366,17 +314,14 @@ th {
   padding: 0px;
   height: 4px;
 }
-
 .progress-pm {
   width: 85%;
   border-radius: 4px;
 }
-
 .progress-adobe {
   width: 80%;
   border-radius: 4px;
 }
-
 .progress-html {
   width: 100%;
   border-radius: 4px;
@@ -386,17 +331,14 @@ th {
   width: 95%;
   border-radius: 4px;
 }
-
 .progress-js {
   width: 88%;
   border-radius: 4px;
 }
-
 .progress-react {
   width: 63%;
   border-radius: 4px;
 }
-
 .progress-backend {
   width: 42%;
   border-radius: 4px;
@@ -411,17 +353,16 @@ th {
 }
 
 /*** 5. Navbar & Apple Icon ***/
+
 .fa {
   margin-left: 15px;
   padding: 5px 7px 5px 7px;
 }
-
 .fa:hover {
   background: rgba(21, 109, 215, 0.8);
   padding: 5px 7px 5px 7px;
   border-radius: 4px;
 }
-
 .apple-logo {
   width: 15px;
   /*content: var(--logo);*/
@@ -440,15 +381,12 @@ th {
   font-size: var(--font-size);
   color: var(--text-color) !important;
 }
-
 .nav-item:hover {
   cursor: pointer;
 }
-
 .nav-link:hover {
   cursor: pointer;
 }
-
 .nav-link:focus {
   background: rgba(21, 109, 215, 0.8) !important;
   height: 2rem;
@@ -462,11 +400,9 @@ th {
   margin: 0px;
   color: var(--text-color) !important;
 }
-
 .dropdown-item:hover {
   background: rgba(21, 109, 215, 0.8);
 }
-
 .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.65);
   color: var(--text-color) !important;
@@ -481,7 +417,6 @@ th {
   cursor: pointer;
   display: none;
 }
-
 .folder-container-2 {
   width: 78px;
   position: absolute;
@@ -491,39 +426,27 @@ th {
   display: none;
 }
 
+
 #folders {
   width: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-content: center;
+  justify-content: center;
 }
 
 #folders:active {
   opacity: 0.7;
-  -webkit-transform: rotate(4deg);
-          transform: rotate(4deg);
+  transform: rotate(4deg);
   background: rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   border: 1px solid grey;
 }
-
 .resize-drag {
   /* This makes things *much* easier */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-touch-action: none !important;
-      touch-action: none !important;
-  -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-      -ms-user-select: none !important;
-          user-select: none !important;
+  box-sizing: border-box;
+  touch-action: none !important;
+  user-select: none !important;
 }
-
 .resize-container {
   width: 100%;
   height: 240px;
@@ -540,7 +463,6 @@ th {
   -moz-backdrop-filter: blur(7px);
   -o-background-filter: blur(7px);
 }
-
 .form-signin {
   width: 100%;
   max-width: 390px;
@@ -550,17 +472,14 @@ th {
   top: 20%;
   z-index: 999999;
 }
-
 .form-signin .form-control {
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: auto;
   padding: 10px;
   font-size: 16px;
   z-index: 999999;
 }
-
 .form-signin .form-control:focus {
   z-index: 2;
 }
@@ -569,46 +488,21 @@ input[type="text"],
 textarea {
   background-color: rgba(255, 255, 255, 0.3);
   border: 0px;
+
 }
 
 #submit {
   background: rgba(244, 244, 244, 0.9);
-  color: #8e8e8e;
+  color: rgb(142, 142, 142);
   border: 0px;
 }
-
 #submit:hover {
-  background: #f4f4f4;
+  background: rgba(244, 244, 244, 1);
 }
-
-::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(244, 244, 244, 0.7) !important;
-  opacity: 1 !important;
-  /* Firefox */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(244, 244, 244, .7) !important;
+  opacity: 1 !important; /* Firefox */
 }
-
-:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(244, 244, 244, 0.7) !important;
-  opacity: 1 !important;
-  /* Firefox */
-}
-
-::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(244, 244, 244, 0.7) !important;
-  opacity: 1 !important;
-  /* Firefox */
-}
-
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(244, 244, 244, 0.7) !important;
-  opacity: 1 !important;
-  /* Firefox */
-}
-
 /*
 .skip {
   background: transparent !important;
@@ -637,36 +531,33 @@ textarea {
   margin: 0px;
   padding: 0px;
 }
-
 #bg-container img {
   width: 100%;
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.2) !important;
   border-radius: 100%;
   height: 65px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
-}
 
+}
 #bg-img-1 {
   width: 100%;
   background: rgba(0, 0, 0, 0.2) !important;
   border: 2px solid rgba(0, 0, 0, 0.2) !important;
   border-radius: 100%;
   height: 65px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
+
 }
 
 #bg-container img:hover,
 #bg-img-1:hover {
   opacity: 1;
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
+  transform: scale(1.1);
   transition: 0.3s;
   opacity: .7;
+
 }
 
 .plus {
@@ -678,7 +569,6 @@ textarea {
   z-index: 999999;
   display: none;
 }
-
 .plus:hover {
   cursor: pointer;
 }
@@ -687,21 +577,17 @@ textarea {
 .search {
   display: none;
 }
-
 .fa-battery-full span {
   font-family: arial !important;
   font-weight: bold;
 }
-
 .fa-battery-half span {
   font-family: arial !important;
   font-weight: bold;
 }
-
 .fa-battery-quarter {
   color: #ff6e68 !important;
 }
-
 .fa-battery-quarter span {
   font-family: arial !important;
   font-weight: bold;
@@ -710,19 +596,19 @@ textarea {
 
 /*** 10. Media Querey 1 handling width of 870px or less ***/
 @media only screen and (max-width: 870px) {
-  table {
+  table{
     font-size: 10px;
   }
-  .notification {
-    bottom: 95px;
+  .notification{
+    bottom:95px;
   }
-  .notification header span {
+  .notification header span{
     font-size: 13px;
   }
   .notification h5 {
     font-size: 13px;
   }
-  .notification p {
+  .notification p{
     font-size: 11px;
   }
   .bluetooth,
@@ -736,7 +622,6 @@ textarea {
   }
   .mobile-fade {
     display: block;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
     background-image: linear-gradient(to bottom, transparent, black);
     position: fixed;
     bottom: 0;
@@ -771,6 +656,7 @@ textarea {
     padding: 5px 0px 0px 0px;
     margin: 0px;
   }
+
   .form-signin {
     top: 10%;
   }
@@ -778,4 +664,3 @@ textarea {
     overflow-y: visible !important;
   }
 }
-/*# sourceMappingURL=style.css.map */
