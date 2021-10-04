@@ -28,6 +28,11 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/loader.css" />
+       <!-- Joke JS Tabs -->
+    <script>
+        window.onfocus = function(){document.title = "Chris Rutledge"};
+        window.onblur = function(){document.title = "Wait, where are you going? :/"};
+    </script>
 </head>
 
 <body class="background-fun" id="body" onmousemove="sleepOff();" ontouchmove="sleepOff();">
@@ -119,7 +124,7 @@
                     <a class="dropdown-item clip" onclick="clipAlert();">Copy URL</a>
                 </div>
             </li>
-
+<!-- 
             <li class="nav-item dropdown">
                 <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-top: 10px">
                     Skills
@@ -136,20 +141,18 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" ondblclick="openModal()" ontouchend="openModal()" data-toggle="modal" data-target="#aboutMe">View More...</a>
                 </div>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
                 <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-top: 10px">
                     Contact
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item">Email: hi@rutledgeismyname.com</a>
+                    <a class="dropdown-item" href="mailto:hi@rutledgeismyname.com">Email: hi@rutledgeismyname.com</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item">Phone: (+1)You-can-ask-me</a>
+                    <a class="dropdown-item">Phone: <span class="phone">(+1) 123.484.2555</span></a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item">GitHub: rutledgeismyname</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" style="background: transparent">Social: <i class="fa fa-instagram"></i><i class="fa fa-facebook"></i> <i class="fa fa-linkedin"></i>
-                        <i class="fa fa-twitter"></i></a>
+                    <a class="dropdown-item" href="https://github.com/rutledgeismyname" target="_blank">GitHub: rutledgeismyname</a>
+                   
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -231,35 +234,35 @@
                             <th>Purpose</th>
 
                         </tr>
-                        <tr class="dark-table">
+                        <tr class="dark-table" onclick="location.href='https://fanpages.philadelphiaeagles.com/fantasyfootball.html'">
                             <td>
                                 <img src="/images/folder.png" width="18px" alt="Fantasy Football Draft Night" title="Fantasy Football Draft Night" /> Fantasy Football Draft Night
                             </td>
                             <td>2021</td>
                             <td>Work</td>
                         </tr>
-                        <tr class="light-light">
+                        <tr class="light-light" onclick="location.href='https://components.rutledgeismyname.com/'">
                             <td>
                                 <img src="/images/folder.png" width="18px" alt="My Components" title="My Components" /> My Components
                             </td>
                             <td>2021</td>
                             <td>Personal</td>
                         </tr>
-                        <tr class="dark-table">
+                        <tr class="dark-table" onclick="location.href='https://fanpages.philadelphiaeagles.com/cheerauditions.html'">
                             <td>
                                 <img src="/images/folder.png" width="18px" title="Eagles Cheer Auditions" alt="Eagles Cheer Auditions" /> Eagles Cheer Auditions
                             </td>
                             <td>2021</td>
                             <td>Work</td>
                         </tr>
-                        <tr class="light-light">
+                        <tr class="light-light" onclick="location.href='https://lexinlifestyle.com/'">
                             <td>
                                 <img src="/images/folder.png" width="18px" alt="Lexin Lifestyle" title="Lexin Lifestyle" /> Lexin Lifestyle
                             </td>
                             <td>2021</td>
                             <td>Freelance</td>
                         </tr>
-                        <tr class="dark-table">
+                        <tr class="dark-table" onclick="location.href='https://events.lincolnfinancialfield.com/newplayer/'">
                             <td>
                                 <img src="/images/folder.png" width="18px" alt="Eagles Undrafted Player" title="Eagles Undrafted Player" /> Eagles Undrafted
                                 Player
@@ -267,22 +270,14 @@
                             <td>2021</td>
                             <td>Work</td>
                         </tr>
-                        <tr class="light-light">
-                            <td>
-                                <img src="/images/folder.png" width="18px" alt="Guess The Number" title="Guess The Number" /> Guess The
-                                Number?
-                            </td>
-                            <td>2021</td>
-                            <td>Personal</td>
-                        </tr>
-                        <tr class="dark-table">
+                        <tr class="light-light" onclick="location.href='https://rutledgeismyname.github.io/pig-game/'">
                             <td>
                                 <img src="/images/folder.png" width="18px" alt="Pig Game" title="Pig Game" /> Pig Game
                             </td>
                             <td>2021</td>
                             <td>Personal</td>
                         </tr>
-                        <tr class="light-light">
+                        <tr class="dark-table" onclick="location.href='https://sincerelypatience.com/'">
                             <td>
                                 <img src="/images/folder.png" width="18px" alt="Sincerely Patience" title="Sincerely Patience" /> Sincerley
                                 Patience
@@ -291,7 +286,7 @@
                             <td>Work</td>
                         </tr>
 
-                        <tr class="dark-table">
+                        <tr class="light-light" onclick="location.href='https://fanpages.philadelphiaeagles.com/eagleshealth.html'">
                             <td>
                                 <img src="/images/folder.png" width="18px" alt="Eagles Health" title="Eagles Health" /> Eagles Health & Wellness
                             </td>
@@ -300,11 +295,19 @@
                             <td>Work</td>
                         </tr>
 
-                        <tr class="light-light">
+                        <tr class="dark-table" onclick="location.href='https://www.eaglesautismchallenge.org/'">
                             <td>
                                 <img src="/images/folder.png" width="18px" alt="Eagles Autism Challenge" title="Eagles Autism Challenge" /> Eagles Autism
                                 Challenge
                             </td>
+                            <td>2017</td>
+                            <td>Work</td>
+                        </tr>
+                        <tr class="light-light" onclick="location.href='https://www.eaglescharitablefoundation.org/'">
+                            <td>
+                                <img src="/images/folder.png" width="18px" alt="Eagles Charitable Foundation" title="Eagles Charitable Foundation" /> Eagles Charitable Foundation
+                            </td>
+
                             <td>2017</td>
                             <td>Work</td>
                         </tr>
@@ -327,37 +330,20 @@
                     <span class="red-button" data-dismiss="modal" aria-label="Close"></span>
                 </div>
                 <div class="modal-body about-me-modal">
-                    <img src="/images/me.JPG" width="80px" alt="Chris Rutledge Headshot" title="Chris Rutledge Headshot" style="border-radius: 100px" />
+                    <img src="/images/me.JPG" width="80px" alt="Chris Rutledge Headshot" title="Chris Rutledge Headshot" class="me" />
                     <h3>Chris Rutledge</h3>
-                    <h4>Front-end Web Developer</h4>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-                        minima odio aliquam pariatur impedit? Earum ipsum veniam unde
-                        voluptas quae dolores eos nam et distinctio nostrum magnam,
-                        maiores, ut sit. Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Ut provident deserunt sint rem nam natus quidem
-                        iste at eum vel veniam repellendus, magni illo, consectetur
-                        nostrum! Voluptatum repudiandae rerum blanditiis! Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit. Saepe veniam, optio
-                        delectus eos tempora a temporibus cumque libero ducimus minima
-                        sequi veritatis? Assumenda placeat unde repellat rem voluptatem,
-                        sit voluptates.
+                        Hi! I’m a front end developer, designer, and a wannabe professional soccer player based in Philadelphia. I’m currently part of the creative team at the Philadelphia Eagles. I graduated from the Pennsylvania College of Technology in 2016.
                     </p>
                     <hr class="line-white" />
                     <h2>Hobbies</h2>
                     <div class="hobbies">
                         <p>Coding</p>
                         <p>Soccer</p>
-                        <p>Small Talk</p>
+                        <p>Football</p>
                         <p>Snowboarding</p>
-                        <br />
-                        <p>Snowboarding</p>
-                        <p>Coding</p>
-                        <p>Coding</p>
-                        <p>Coding</p>
-                        <br />
-                        <p>Coding</p>
-                        <p>Soccer</p>
+                        <!-- <br /> -->
+                      
                     </div>
                     <hr class="line-white" />
                     <h2>Skills</h2>
@@ -372,68 +358,24 @@
                     </div>
                     <p>JavaScript</p>
                     <div class="progress">
-                        <div class="progress-bar progress-js" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <p>Project Managment</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-pm" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-js" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="90"></div>
                     </div>
                     <p>Adobe Suite (PS, AI, XD, ID)</p>
                     <div class="progress">
-                        <div class="progress-bar progress-adobe" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-adobe" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="85"></div>
                     </div>
                     <p>React</p>
                     <div class="progress">
-                        <div class="progress-bar progress-react" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-react" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="60"></div>
                     </div>
                     <p>Backend (SQL, PHP, Database)</p>
                     <div class="progress">
-                        <div class="progress-bar progress-backend" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-backend" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="35"></div>
                     </div>
-                    <br />
-<!-- 
-                    <hr class="line-white" />
-                    <h2>Cover Letter</h2>
+                    <br>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-                        minima odio aliquam pariatur impedit? Earum ipsum veniam unde
-                        voluptas quae dolores eos nam et distinctio nostrum magnam,
-                        maiores, ut sit. Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Ut provident deserunt sint rem nam natus quidem
-                        iste at eum vel veniam repellendus, magni illo, consectetur
-                        nostrum! Voluptatum repudiandae rerum blanditiis!
+                       That is all...hope you enjoeyed that insanely long introduction. 😆
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-                        veniam, optio delectus eos tempora a temporibus cumque libero
-                        ducimus minima sequi veritatis? Assumenda placeat unde repellat
-                        rem voluptatem, sit voluptates. Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Magnam animi vitae rem amet esse
-                        reiciendis excepturi. Nostrum amet sunt, reiciendis est adipisci,
-                        quia recusandae, minima suscipit laboriosam nam consequuntur
-                        aperiam! Lorem ipsum dolor si.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-                        veniam, optio delectus eos tempora a temporibus cumque libero
-                        ducimus minima sequi veritatis? Assumenda placeat unde repellat
-                        rem voluptatem, sit voluptates. Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Magnam animi vitae rem amet esse
-                        reiciendis excepturi. Nostrum amet sunt, reiciendis est adipisci,
-                        quia recusandae, minima suscipit laboriosam nam consequuntur
-                        aperiam! Lorem ipsum dolor si.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-                        veniam, optio delectus eos tempora a temporibus cumque libero
-                        ducimus minima sequi veritatis? Assumenda placeat unde repellat
-                        rem voluptatem, sit voluptates. Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Magnam animi vitae rem amet esse
-                        reiciendis excepturi. Nostrum amet sunt, reiciendis est adipisci,
-                        quia recusandae, minima suscipit laboriosam nam consequuntur
-                        aperiam! Lorem ipsum dolor si.
-                    </p>
-                    <p class="cursive">Christopher Rutledge</p> -->
                 </div>
             </div>
         </div>
